@@ -11,7 +11,7 @@ class App extends React.Component {
     //calling super in order to initialize the 'this' keyword and allow ES6 to take our subclass
     super();
     /*setting this.state equal to an initial value of an object, containing a key of
-    todoList and a value of an array containing the original list*/
+    todoList and a value of an array */
     this.state = {todoList: []};
   };
   //declaring function for toggling the bool value depending on if each item was completed or not
@@ -36,7 +36,7 @@ class App extends React.Component {
     });
   };
   clearCompleted = () => {
-  console.log("bk: index.js: App: clearPurchased");
+  
   this.setState({
     todoList: this.state.todoList.filter(item => {
       return !item.completed;
