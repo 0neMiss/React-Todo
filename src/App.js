@@ -7,6 +7,7 @@ class App extends React.Component {
   // design `App` to be the parent component of your application.
   // this component is going to take care of state, and any change handlers you need to work with your state
 //calling constructor to handle state
+//constructor is allowing us acces to whats provided from React.Component
   constructor() {
     //calling super in order to initialize the 'this' keyword and allow ES6 to take our subclass
     super();
@@ -36,7 +37,7 @@ class App extends React.Component {
     });
   };
   clearCompleted = () => {
-  
+
   this.setState({
     todoList: this.state.todoList.filter(item => {
       return !item.completed;
